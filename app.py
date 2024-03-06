@@ -25,6 +25,8 @@ llm_chain = LLMChain(
 )
 
 def get_text_response(user_message,history):
+    user_message = str(user_message)
+    history = str(history)
     response = llm_chain.predict(user_message = user_message)
     return response
 
