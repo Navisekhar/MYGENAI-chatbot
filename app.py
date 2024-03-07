@@ -4,7 +4,8 @@ from langchain.chat_models import ChatOpenAI
 from langchain import LLMChain, PromptTemplate
 from langchain.memory import ConversationBufferMemory
 
-OPENAI_API_KEY=os.getenv('OPENAI_API_KEY')
+OPENAI_API="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"
+os.environ["OPENAI_API"] = OPENAI_API
 
 template = """You are a helpful assistant to answer all user queries.
 {chat_history}
